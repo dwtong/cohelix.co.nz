@@ -1,0 +1,71 @@
+// Imports
+@import 'normalize';
+@import 'skeleton';
+
+// Main
+
+nav {
+  //background-color: gray;
+  color           : white;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  width           : 100%;
+  height          : 80px;
+  z-index         : 999;
+
+  h1 {
+    float       : left;
+    padding-left: 30px;
+    padding-top : 10px;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style : none;
+    float      : right;
+    padding-top: 30px;
+
+    li {
+      display      : inline;
+      padding-right: 30px;
+    }
+  }
+}
+
+.hero {
+  content         : '';
+  position        : relative;
+  height          : 100vh;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  left            : 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity         : 0.8;
+
+  h1 {
+    position: absolute;
+    top     : 35%;
+    left    : 15%;
+    color   : white;
+  }
+
+  p {
+    position: absolute;
+    top     : 65%;
+    left    : 15%;
+    width: 40%;
+    color   : white;
+  }
+}
+
+.contact {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+
+}
+
+#summary {
+  font-size: 1.3em;
+}

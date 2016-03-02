@@ -1,59 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+---
+layout: default
+title: home
+---
 
-    <!-- Font -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
-
-    <title>CoHelix</title>
-  </head>
-
-  <body>
-    <nav>
-      <h1>CoHelix</h1>
-      <ul>
-        <li>Who</li>
-        <li>What</li>
-        <li>Contact</li>
-        <li>Blog</li>
-      </ul>
-    </nav>
-
-    <div class="hero">
-      <h1>Dream big, like a unicorn</h1>
+<section class="contact">
+  <h1>Contact us</h1>
+  <form>
+    <div class="row">
+      <div class="six columns">
+        <label for="nameInput">Your name</label>
+        <input class="u-full-width" type="text" placeholder="John Smith" id="nameInput">
+      </div>
+      <div class="six columns">
+        <label for="emailInput">Your email</label>
+        <input class="u-full-width" type="text" placeholder="you@example.com" id="emailInput">
+      </div>
+      <label for="message">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Dave …" id="message"></textarea>
+      <label class="send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
     </div>
-
-    <div class="container">
-
-      <section class="contact">
-        <h1>Contact us</h1>
-        <form>
-          <div class="row">
-            <div class="six columns">
-              <label for="nameInput">Your name</label>
-              <input class="u-full-width" type="text" placeholder="John Smith" id="nameInput">
-          </div>
-          <div class="six columns">
-            <label for="emailInput">Your email</label>
-            <input class="u-full-width" type="text" placeholder="you@example.com" id="emailInput">
-          </div>
-          <label for="message">Message</label>
-          <textarea class="u-full-width" placeholder="Hi Dave …" id="message"></textarea>
-          <label class="send-yourself-copy">
-            <input type="checkbox">
-            <span class="label-body">Send a copy to yourself</span>
-          </label>
-          <input class="button-primary" type="submit" value="Submit">
-        </form>
-
-      </form>
-
-    </div>
-
-  </div>
-</body>
-</html>
+  </form>
+</section>

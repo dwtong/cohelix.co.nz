@@ -1,33 +1,22 @@
 var gulp = require('gulp');
+var shell = require('gulp-shell');
 var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
 
-// Default task - DOES THIS HAVE TO BE AT THE BOTTOM?
-gulp.task('default', ['serve']);
+// Run Jekyll 'build' task, and watch for changes
+gulp.task('build', shell.task(['jekyll build --watch']));
 
-// Compile sass into CSS, auto-inject into browsers
-// DOES THIS HAVE T OCOME AFTER THE SERVE TASK?
-gulp.task('sass', function () {
-  return gulp.src('styles/*.scss')
-    // Process sass
-    .pipe(sass())
-
-    // Destination for output CSS
-    .pipe(gulp.dest('styles'))
-
-    // Update browsersync
-    .pipe(browserSync.stream());
-});
-
-gulp.task('serve', ['sass'], function () {
-  // Initialise browsersync server
+// Run browser sync server, and update when Jekyll rebuilds
+gulp.task('serve', function() {
+  // Initialise browserSync server
   browserSync.init({
-    server: "./"
+    server: {
+      baseDir: '_site'
+    }
   });
 
-  // Watch for changes to sass, and run 'sass' task on change
-  gulp.watch("styles/*.scss", ['sass']);
-
-  // Watch for changes to HTML, and reload browser on change
-  gulp.watch("*.html").on('change', browserSync.reload);
+  // Update browserSync whenever Jekyll rebuilds any files in _site
+  gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
+
+// Default task
+gulp.task('default', ['build', 'serve']);

@@ -1,16 +1,22 @@
 {
   "name": "cohelix.co.nz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Under Development",
   "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwtong/cohelix.co.nz.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "gulp-sass": "^2.2.0"
-  }
+  "bugs": {
+    "url": "https://github.com/dwtong/cohelix.co.nz/issues"
+  },
+  "homepage": "https://github.com/dwtong/cohelix.co.nz#readme"
 }
