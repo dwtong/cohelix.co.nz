@@ -2,4 +2,8 @@ title: CoHelix
 email: contact@cohelix.co.nz
 description:
 baseurl: ""
+
 exclude: [node_modules, gulpfile.js]
+
+collections:
+  - team_members
