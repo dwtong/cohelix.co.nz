@@ -1,3 +1,6 @@
+---
+---
+
 // Imports
 @import 'normalize';
 @import 'skeleton';
@@ -18,7 +21,7 @@ nav {
     float       : left;
     padding-left: 30px;
     padding-top : 10px;
-    font-weight: bold;
+    font-weight : bold;
   }
 
   ul {
@@ -29,6 +32,10 @@ nav {
     li {
       display      : inline;
       padding-right: 30px;
+    }
+
+    &:after {
+      background-color: green;
     }
   }
 }
@@ -55,13 +62,13 @@ nav {
     position: absolute;
     top     : 65%;
     left    : 15%;
-    width: 40%;
+    width   : 40%;
     color   : white;
   }
 }
 
 .contact {
-  padding-top: 15vh;
+  padding-top   : 15vh;
   padding-bottom: 15vh;
 
 }
