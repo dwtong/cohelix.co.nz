@@ -1,23 +1,28 @@
 <h1>Who we are</h1>
 
-<div class="row">
-  {% for member in site.team_members %}
-    <div class="four columns profile">
-      <div class="">
-        <div
-          class="profile-pic"
-          style="background-image: url('{{ site.baseurl }}/images/{{ member.img }}')"/>
-        </div>
-      <h3>{{ member.name }}</h3>
-      <h5>{{ member.role }}</h5>
-      <!-- {{ member.content }} -->
-      </div>
-    </div>
-  {% endfor %}
+
+<div class="team-desc">
+  <p>
+    This is CoHelix. A team with a diverse mix of experiences, expertise and attitudes that allow them
+    to collectively think outside the box. They inspire each other, listen and challenge one another’s
+    ideas, and have a whole lot of fun whilst doing so.
+  </p>
 </div>
 
-<p>
-  This is CoHelix. A team with a diverse mix of experiences, expertise and attitudes that allow them
-  to collectively think outside the box. They inspire each other, listen and challenge one another’s
-  ideas, and have a whole lot of fun whilst doing so.
-</p>
+<div class="row">
+  {% for member in site.team_members %}
+  <div class="four columns profile">
+    <div class="">
+      <div
+      class="profile-pic"
+      style="background-image: url('{{ site.baseurl }}/images/{{ member.img }}')"/>
+    </div>
+    <h4>{{ member.name }}</h4>
+    <h5>{{ member.role }}</h5>
+    <!-- {{ member.content }} -->
+    <a href="#">Find out more...</a>
+    <p>&nbsp</p>
+  </div>
+</div>
+{% endfor %}
+</div>
