@@ -1,0 +1,24 @@
+<!-- Heading -->
+<div class="row">
+  <h1>What we are doing</h1>
+</div>
+
+<!-- R9 description -->
+<div class="row">
+  <div class="twelve columns">
+    <p>
+      We’re taking part in the R9 Accelerator programme for the next 4 months. R9 Accelerator brings the public and private sectors together to work on real problems impacting businesses. It nurtures teams of creative, solutions-focused people to build market-validated solutions that make it easier for business to interact with government.    <a href="http://www.r9accelerator.co.nz/">Find out more...</a>
+    </p>
+  </div>
+</div>
+
+{% for item in site.data.opportunity %}
+<div class="row">
+  <div class="four columns">
+    <p>{{ item.img }}</p>
+  </div>
+  <div class="eight columns">
+    <p>{{ item.description }}</p>
+  </div>
+</div>
+{% endfor %}
