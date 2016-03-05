@@ -75,8 +75,8 @@ $hero-font-size: 2.5em;
   right           : 0;
   bottom          : 0;
   left            : 0;
-  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
-  opacity         : 0.8;
+  background-image: url('/images/hero.jpeg');
+  background-size: cover;
   padding-left : 8em;
   padding-right: 1em;
 
