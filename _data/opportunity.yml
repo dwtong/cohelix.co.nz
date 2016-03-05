@@ -1,15 +1,18 @@
 ---
 
 - title: fragmented
-  img: url here
+  img: lightning.svg
+  img_alt: lightning
   description: We understand that business customers experience a fragmented service from government front-line staff from regulatory agencies.
 
 - title: duplication
-  img: url here
+  img: docs.svg
+  img_alt: docs
   description: Businesses have to provide the same information multiple times and can’t get cross-cutting advice.
 
 - title: effort
-  img: url here
+  img: clock.svg
+  img_alt: clock
   description: This increases their effort dealing with government, the number of interactions they have, and the likelihood that they’ll have compliance problems which could have been avoided by early intervention and advice.
 
 ---
