@@ -3,4 +3,4 @@ email: contact@cohelix.co.nz
 description:
 baseurl: ""
 
-exclude: [node_modules, gulpfile.js]
+exclude: [node_modules, gulpfile.js, readme.md, package.json]
