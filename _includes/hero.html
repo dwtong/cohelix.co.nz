@@ -1,4 +1,10 @@
-<div class="hero {{ page.hero_size }}" style="background-image: url('/images/{{ page.hero_img }}');">
+<div class="hero {{ page.hero_size }}" style=
+  {% if page.hero_img %}
+  "background-image: url('/images/{{ page.hero_img }}');"
+  {% else %}
+  "background-color: gray;"
+  {% endif %}
+  >
   <div class="row hero-text">
     {% if page.title == 'home' %}
     <h1>Enabling <b>meaningful</b> interactions</h1>

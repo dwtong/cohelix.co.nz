@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+hero_img: hero_contact.jpeg 
+hero_size: small
+---
+
+{% for post in site.posts %}
+  <div class="row">
+    <h3>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    <p>
+      {{ post.excerpt }}
+    </p>
+    <a href="{{ post.url }}">Read post</a>
+  </div>
+{% endfor %}
