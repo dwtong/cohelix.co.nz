@@ -12,10 +12,11 @@
 
 {% for item in site.data.opportunity %}
 <div class="row">
-  <div class="four columns">
-    <img src="/images/{{ item.img }}" alt="{{ item.img_alt }}" />
+  <div class="three columns">
+    <img class="opp-image" src="/images/{{ item.img }}" alt="{{ item.img_alt }}" />
   </div>
-  <div class="eight columns">
+  <div class="nine columns">
+    <h3>{{ item.title }}.</h3>
     <p>{{ item.description }}</p>
   </div>
 </div>
