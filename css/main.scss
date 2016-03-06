@@ -8,7 +8,7 @@
 
 // ----- Variables -------------------------------------------------------------
 
-$nav-height: 200px;
+$nav-height: 100px;
 $hero-height: 100vh;
 $hero-font-size: 2.5em;
 
@@ -48,14 +48,14 @@ section {
 // ----- Navigation ------------------------------------------------------------
 
 .nav {
-//  background-color: rgba(227, 48, 28, 0.3);
   color   : white;
   position: fixed;
   top     : 0;
   left    : 0;
   width   : 100%;
-  height  : $nav-height;
+  height  : $nav-height * 2;
   z-index : 999;
+  transition: height 0.3s;
 
   .logo {
     height     : 100%;
@@ -74,7 +74,7 @@ section {
     li {
       display      : inline;
       padding-right: 10px;
-      font-size: 1.5em;
+      font-size: 1.3em;
 
       a {
         padding: 15px;
@@ -85,11 +85,13 @@ section {
       }
     }
   }
+
+  &.small {
+    background-color: rgba(30,30,30,0.5);
+    height: $nav-height;
+  }
 }
 
-.small {
-  background-color: green;
-}
 
 // ----- Hero ------------------------------------------------------------------
 
