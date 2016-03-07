@@ -88,8 +88,8 @@ section {
       a {
         padding: 15px;
 
-         :hover {
-          background-color: blue;
+         &:hover {
+          background-color: gray;
         }
       }
     }
