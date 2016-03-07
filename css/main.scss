@@ -177,3 +177,17 @@ section {
   width  : 150px;
   height : 150px;
 }
+
+// ----- Blog snippet ----------------------------------------------------------
+
+.blog-snippet {
+  padding-bottom: 5vh;
+  h3 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    padding: 0 0 0 0;
+  }
+}
