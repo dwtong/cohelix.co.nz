@@ -12,16 +12,13 @@
 <div class="row">
   {% for member in site.data.team %}
   <div class="four columns profile">
-    <div class="">
+    <div class="profile">
       <div
       class="profile-pic"
       style="background-image: url('{{ site.baseurl }}/images/{{ member.img }}')"/>
     </div>
     <h4>{{ member.name }}</h4>
     <h5>{{ member.role }}</h5>
-    <!-- {{ member.content }} -->
-    <a href="#">Find out more...</a>
-    <p>&nbsp</p>
   </div>
 </div>
 {% endfor %}

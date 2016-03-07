@@ -36,7 +36,6 @@ section {
 .site-footer {
   border-top      : solid 1px rgb(208, 208, 208);
   background-color: rgb(208, 208, 208);
-  padding-top     : 25px;
   padding-left    : 25px;
 
   h3 {
@@ -50,7 +49,23 @@ section {
 
   .logo {
     color : black;
-    height: 150px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icons {
+    float: right;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    padding-left:15px;
+    padding-right: 15px;
   }
 }
 
@@ -75,6 +90,10 @@ section {
     color          : white;
   }
 
+  @media (max-width: 768px) {
+    position: relative;
+  }
+
   ul {
     list-style : none;
     float      : right;
@@ -84,6 +103,10 @@ section {
       display      : inline;
       padding-right: 10px;
       font-size    : 1.3em;
+
+      @media (max-width: 768px) {
+        float: left;
+      }
 
       a {
         padding: 15px;
@@ -117,6 +140,7 @@ section {
 
   @media (max-width: 768px) {
     padding-left: 2em;
+    margin-top: -300px;
   }
 
   &.large {
@@ -132,9 +156,7 @@ section {
     padding-top: 20em;
 
     @media (max-width: 768px) {
-      top        : 15%;
-      left       : 5%;
-      padding-top: 2em;
+      visibility: hidden;
     }
   }
 
@@ -151,10 +173,11 @@ section {
 
 .profile {
   text-align      : center;
-  background-color: rgb(55, 55, 55);
-  color           : white;
   margin          : 5px 10px;
   border-radius   : 25px;
+  h3 {
+    font-size: 5px;
+  }
 }
 
 .profile-pic {
@@ -165,8 +188,8 @@ section {
   background-size    : cover;
   background-repeat  : no-repeat;
   background-position: center center;
-  border-radius      : 2em;
-  border             : 5px solid #eee;
+  border-radius      : 25em;
+  //border             : 5px solid #eee;
   box-shadow         : 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -181,7 +204,6 @@ section {
 // ----- Blog snippet ----------------------------------------------------------
 
 .blog-snippet {
-  padding-bottom: 5vh;
   h3 a {
     text-decoration: none;
     color: black;
