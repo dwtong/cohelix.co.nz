@@ -1,25 +1,8 @@
 ---
 
-- name: Alex Komarovsky
-  role: Hipster
-  img: alex.jpg
-  description: >
-    <p>
-      Alex is a user experience consultant for Statistics NZ. Over the past year he has worked on projects that cross the UX spectrum, including customer research, quantitative and qualitative measurement and analysis, user testing, and interaction design.
-      These projects required Alex to engage with customers and advocate their needs while collaborating with developers, statisticians, business analysts, and managers.
-    </p>
-
-    <p>
-      In 2015, Alex was a designer for the GovHack team CommuniMe. He conducted guerilla user research, product testing, and fed insights back to the team to help determine a minimum viable product. The team’s resulting solution won the Entrepreneurialism 2nd prize.
-    </p>
-
-    <p>
-      Alex was involved in developing the Statistics NZ Innovation website, which aims to promote an innovation by allowing people to experiment with new ideas and gather feedback from the
-    </p>
-
 - name: Dan Tong
   role: Hacker
-  img: dan.jpg
+  img: dan.png
   description: >
     <p>
       Dan’s experience as a test consultant saw him working in Agile project teams focussing on web development technologies, including front end (HTML/CSS/JS) and back end (Java). He has an educational background in business and technology, after graduating with a Bachelor of Commerce and Administration in Information Systems and Marketing.
@@ -35,7 +18,7 @@
 
 - name: Nicole McCallum
   role: Hustler
-  img: nicole.jpg
+  img: nicole.png
   description: >
     <p>
       Nicole graduated with degrees in law and politics and then went on to work as a test consultant. Her
@@ -53,6 +36,23 @@
       Nicole was involved in setting up one of the first Aotearoa Code Clubs in Wellington, which teaches
       young children how to code. She also inspired other colleagues to join her in volunteering at the
       Club, which was so successful that many schools asked for another run of the program.
+    </p>
+
+- name: Alex Komarovsky
+  role: Hipster
+  img: alex.png
+  description: >
+    <p>
+      Alex is a user experience consultant for Statistics NZ. Over the past year he has worked on projects that cross the UX spectrum, including customer research, quantitative and qualitative measurement and analysis, user testing, and interaction design.
+      These projects required Alex to engage with customers and advocate their needs while collaborating with developers, statisticians, business analysts, and managers.
+    </p>
+
+    <p>
+      In 2015, Alex was a designer for the GovHack team CommuniMe. He conducted guerilla user research, product testing, and fed insights back to the team to help determine a minimum viable product. The team’s resulting solution won the Entrepreneurialism 2nd prize.
+    </p>
+
+    <p>
+      Alex was involved in developing the Statistics NZ Innovation website, which aims to promote an innovation by allowing people to experiment with new ideas and gather feedback from the
     </p>
 
 ---
