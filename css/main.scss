@@ -47,14 +47,6 @@ section {
     list-style: none;
   }
 
-  .logo {
-    color : black;
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .icons {
     float: right;
     text-align: center;
@@ -66,6 +58,10 @@ section {
     height: 30px;
     padding-left:15px;
     padding-right: 15px;
+  }
+
+  .logo {
+    height: 100px;
   }
 }
 
@@ -82,7 +78,8 @@ section {
   transition: height 0.3s;
 
   .logo {
-    height: 100%;
+    height: $nav-height * 2;
+    transition: height 0.3s;
   }
 
   a {
@@ -121,6 +118,10 @@ section {
   &.small {
     background-color: rgba(30,30,30,0.5);
     height          : $nav-height;
+
+    .logo {
+      height: $nav-height;
+    }
   }
 }
 
