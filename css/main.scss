@@ -8,8 +8,22 @@
 // ----- Variables -------------------------------------------------------------
 
 $nav-height: 70px;
-$hero-height: 100vh;
+$hero-height: 600px;
 $hero-font-size: 2.5em;
+
+// ----- Core ------------------------------------------------------------------
+
+h3 {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+p {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
 
 // ----- Section ---------------------------------------------------------------
 
@@ -17,7 +31,7 @@ section {
   margin-bottom: 12vh;
 
   h1 {
-    text-align: center;
+    text-align   : center;
     margin-bottom: 8vh;
   }
 
@@ -47,22 +61,22 @@ section {
   }
 
   .icons {
-    float: right;
+    float     : right;
     text-align: center;
     margin-top: 15px;
   }
 
   .icon {
-    width: 30px;
-    height: 30px;
-    padding-left:15px;
+    width        : 30px;
+    height       : 30px;
+    padding-left : 15px;
     padding-right: 15px;
   }
 
   .logo {
-    height: 100px;
+    height : 100px;
     display: block;
-    margin: auto;
+    margin : auto;
   }
 }
 
@@ -78,9 +92,19 @@ section {
   z-index   : 999;
   transition: height 0.3s;
 
-  .logo {
+  @media (max-width: 768px) {
     height: $nav-height * 2;
+  }
+
+  .logo {
+    height    : $nav-height * 2;
     transition: height 0.3s;
+
+    @media (max-width: 768px) {
+      height : $nav-height * 2;
+      display: block;
+      margin : auto;
+    }
   }
 
   a {
@@ -103,13 +127,16 @@ section {
       font-size    : 1.3em;
 
       @media (max-width: 768px) {
-        float: left;
+        float         : left;
+        width         : 100%;
+        text-align    : center;
+        padding-bottom: 10px;
       }
 
       a {
         padding: 15px;
 
-         &:hover {
+        &:hover {
           background-color: gray;
         }
       }
@@ -121,7 +148,14 @@ section {
     height          : $nav-height;
 
     .logo {
-      height: $nav-height;
+      @media (min-width: 768px) {
+        height : $nav-height;
+      }
+
+      @media (max-width: 768px) {
+      display: block;
+      margin : auto;
+      }
     }
   }
 }
@@ -129,28 +163,28 @@ section {
 // ----- Hero ------------------------------------------------------------------
 
 .hero {
-  content         : '';
-  position        : relative;
-  top             : 0;
-  right           : 0;
-  bottom          : 0;
-  left            : 0;
-  background-size : cover;
-  padding-left    : 8em;
-  padding-right   : 1em;
-  margin-bottom: 8vh;
+  content        : '';
+  position       : relative;
+  top            : 0;
+  right          : 0;
+  bottom         : 0;
+  left           : 0;
+  background-size: cover;
+  padding-left   : 8em;
+  padding-right  : 1em;
+  margin-bottom  : 8vh;
 
   @media (max-width: 768px) {
     padding-left: 2em;
-    margin-top: -300px;
+    margin-top  : -300px;
   }
 
   &.large {
-    height          : $hero-height;
+    height: $hero-height;
   }
 
   &.small {
-    height          : $hero-height / 2;
+    height: $hero-height / 2;
   }
 
   .hero-text {
@@ -174,8 +208,9 @@ section {
 // ----- Team Profile ----------------------------------------------------------
 
 .profile {
-  text-align      : center;
-  border-radius   : 25px;
+  text-align   : center;
+  border-radius: 25px;
+
   h3 {
     font-size: 5px;
   }
@@ -197,10 +232,10 @@ section {
 // ----- Opportunity -----------------------------------------------------------
 
 .opp-image {
-  display: block;
-  margin: auto;
-  width  : 150px;
-  height : 150px;
+  display       : block;
+  margin        : auto;
+  width         : 150px;
+  height        : 150px;
   padding-bottom: 20px;
 }
 
@@ -209,10 +244,10 @@ section {
 .blog-snippet {
   h3 a {
     text-decoration: none;
-    color: black;
+    color          : black;
   }
 
   p {
-    padding: 0 0 0 0;
+    padding: 0;
   }
 }
