@@ -1,6 +1,7 @@
-title: CoHelix
-email: contact@cohelix.co.nz
+title: "CoHelix"
+email: "dan@cohelix.co.nz"
 description:
+url: "http://www.cohelix.co.nz"
 baseurl: ""
 
-exclude: [node_modules, gulpfile.js, readme.md, package.json]
+exclude: ["_app", "node_modules", "gulpfile.js", "package.json", "readme.md"]
