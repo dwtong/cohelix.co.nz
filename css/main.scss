@@ -21,13 +21,13 @@
   }
 
   @else if $point == tablet {
-    @media (min-width: 50em) {
+    @media (min-width: 35em) {
       @content;
     }
   }
 
   @else if $point == mobile {
-    @media (max-width: 50em) {
+    @media (max-width: 35em) {
       @content;
     }
 
@@ -37,7 +37,6 @@
 // ----- Variables -------------------------------------------------------------
 
 $nav-height: 70px;
-$hero-height: 100vh;
 $hero-font-size: 2.5em;
 
 // ----- Core ------------------------------------------------------------------
@@ -163,7 +162,7 @@ section {
       }
 
       a {
-        padding: 15px;
+        padding: 14px;
 
         &:hover {
           background-color: gray;
@@ -176,15 +175,16 @@ section {
     background-color: rgba(30,30,30,0.5);
     height          : $nav-height;
 
+    @include bp(mobile) {
+      display: block;
+      margin : auto;
+      height : $nav-height * 2;
+    }
+
     .logo {
+      // Logo in navbar shrinks on scroll for everything bigger than mobile
       @include bp(tablet) {
         height: $nav-height;
-      }
-
-      @include bp(mobile) {
-        display: block;
-        margin : auto;
-        height: $nav-height / 2;
       }
     }
   }
@@ -210,11 +210,22 @@ section {
   }
 
   &.large {
-    height: $hero-height;
+
+    @include bp(mobile) {
+      height: 500px;
+    }
+
+    @include bp(tablet) {
+      height: 65vh;
+    }
+
+    @include bp(desktop) {
+      height: 100vh;
+    }
   }
 
   &.small {
-    height: $hero-height / 2;
+    height: 50vh;
   }
 
   .hero-text {
@@ -223,6 +234,10 @@ section {
 
     @include bp(mobile) {
       visibility: hidden;
+    }
+
+    @include bp(tablet) {
+      visibility: visible;
     }
   }
 
