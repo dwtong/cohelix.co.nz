@@ -5,22 +5,51 @@
 @import 'skeleton';
 @import url('//fonts.googleapis.com/css?family=Raleway:400,300,600');
 
+// ----- Mixins ----------------------------------------------------------------
+
+@mixin bp($point) {
+  @if $point == large {
+    @media (min-width: 70em) {
+      @content;
+    }
+  }
+
+  @else if $point == desktop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
+
+  @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  }
+
+  @else if $point == mobile {
+    @media (max-width: 50em) {
+      @content;
+    }
+
+  }
+}
+
 // ----- Variables -------------------------------------------------------------
 
 $nav-height: 70px;
-$hero-height: 600px;
+$hero-height: 100vh;
 $hero-font-size: 2.5em;
 
 // ----- Core ------------------------------------------------------------------
 
 h3 {
-  @media (max-width: 768px) {
+  @include bp(mobile) {
     text-align: center;
   }
 }
 
 p {
-  @media (max-width: 768px) {
+  @include bp(mobile) {
     text-align: center;
   }
 }
@@ -92,7 +121,7 @@ section {
   z-index   : 999;
   transition: height 0.3s;
 
-  @media (max-width: 768px) {
+  @include bp(mobile) {
     height: $nav-height * 2;
   }
 
@@ -100,7 +129,7 @@ section {
     height    : $nav-height * 2;
     transition: height 0.3s;
 
-    @media (max-width: 768px) {
+    @include bp(mobile) {
       height : $nav-height * 2;
       display: block;
       margin : auto;
@@ -112,7 +141,7 @@ section {
     color          : white;
   }
 
-  @media (max-width: 768px) {
+  @include bp(mobile) {
     position: relative;
   }
 
@@ -126,7 +155,7 @@ section {
       padding-right: 10px;
       font-size    : 1.3em;
 
-      @media (max-width: 768px) {
+      @include bp(mobile) {
         float         : left;
         width         : 100%;
         text-align    : center;
@@ -148,13 +177,14 @@ section {
     height          : $nav-height;
 
     .logo {
-      @media (min-width: 768px) {
-        height : $nav-height;
+      @include bp(tablet) {
+        height: $nav-height;
       }
 
-      @media (max-width: 768px) {
-      display: block;
-      margin : auto;
+      @include bp(mobile) {
+        display: block;
+        margin : auto;
+        height: $nav-height / 2;
       }
     }
   }
@@ -174,7 +204,7 @@ section {
   padding-right  : 1em;
   margin-bottom  : 8vh;
 
-  @media (max-width: 768px) {
+  @include bp(mobile) {
     padding-left: 2em;
     margin-top  : -300px;
   }
@@ -191,7 +221,7 @@ section {
     color      : white;
     padding-top: 20em;
 
-    @media (max-width: 768px) {
+    @include bp(mobile) {
       visibility: hidden;
     }
   }
