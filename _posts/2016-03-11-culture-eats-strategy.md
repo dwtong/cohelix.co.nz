@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "Culture eats strategy for breakfast"
-date:   2016-03-11 12:23:33 +1300
+title:  "Culture Eats Strategy For Breakfast"
 author: Alex
-nav_color: dark
 ---
 
 #####*“Culture eats strategy for breakfast.”*{::}
-\- Peter Drucker
+\- Peter Drucker.
 
 A well crafted and thought provoking soundbite. But what does it actually mean?
 The quote, attributed to management guru Peter Drucker, was introduced to us on the first lesson of R9 Accelerator. It highlights that culture is a powerful and important force in all organisations, from startups, to Government agencies, to large corporations. In our context, it conveys the message that R9 teams should focus on building a great team culture.
@@ -25,4 +23,4 @@ Therefore the key focus for R9 Accelerator teams and all organisations should be
 So perhaps the quote shouldn’t be about what eats what, instead its:
 
 #####*“Culture and Strategy have breakfast together, then they go to work!”*{::}
-\- John Childress
+\- John Childress.
