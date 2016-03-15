@@ -1,7 +1,11 @@
-<nav class="nav">
+{% if page.layout == 'homepage' %}
+<nav class="nav light">
+{% else %}
+<nav class="nav dark">
+{% endif %}
   <div class="row">
     <div class="four columns">
-      <a href="/"><img class="logo" src="/images/cohelix-landscape.svg" alt="CoHelix"/></a>
+      <div class="logo"></div>
     </div>
     <div class="eight columns u-pull-right">
       <ul>

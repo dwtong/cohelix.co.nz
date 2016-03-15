@@ -127,6 +127,9 @@ section {
   .logo {
     height    : $nav-height * 2;
     transition: height 0.3s;
+    background-size    : auto;
+    background-repeat  : no-repeat;
+    background-position: left center;
 
     @include bp(mobile) {
       height : $nav-height * 2;
@@ -137,7 +140,6 @@ section {
 
   a {
     text-decoration: none;
-    color          : white;
   }
 
   @include bp(mobile) {
@@ -186,6 +188,29 @@ section {
       @include bp(tablet) {
         height: $nav-height;
       }
+    }
+  }
+
+  &.dark {
+    a {
+      color: black;
+    }
+
+    .logo {
+      background-image: url("/images/cohelix-landscape-dark.svg");
+    }
+
+    &.small {
+      background-color: rgba(30,30,30,0.1);
+    }
+  }
+
+  &.light {
+    a {
+      color: white;
+    }
+    .logo {
+      background-image: url("/images/cohelix-landscape.svg");
     }
   }
 }
@@ -284,7 +309,7 @@ section {
   padding-bottom: 20px;
 }
 
-// ----- Blog snippet ----------------------------------------------------------
+// ----- Blog ------------------------------------------------------------------
 
 .blog-snippet {
   h3 a {
@@ -294,5 +319,19 @@ section {
 
   p {
     padding: 0;
+  }
+}
+
+.post-box {
+  margin-top: $nav-height * 1.5;
+  margin-bottom: 50px;
+  max-width: 750px;
+
+  p {
+    text-align: justify;
+  }
+
+  .post-header {
+    margin-bottom: 50px;
   }
 }
