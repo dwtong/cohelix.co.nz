@@ -4,7 +4,7 @@ title:  "Culture Eats Strategy For Breakfast"
 author: Alex
 ---
 
-#####*“Culture eats strategy for breakfast.”*{::}
+##### *“Culture eats strategy for breakfast.”*{::}
 \- Peter Drucker.
 
 A well crafted and thought provoking soundbite. But what does it actually mean?
@@ -22,5 +22,5 @@ Therefore the key focus for R9 Accelerator teams and all organisations should be
 
 So perhaps the quote shouldn’t be about what eats what, instead its:
 
-#####*“Culture and Strategy have breakfast together, then they go to work!”*{::}
+##### *“Culture and Strategy have breakfast together, then they go to work!”*{::}
 \- John Childress.
