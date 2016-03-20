@@ -1,23 +1,22 @@
 function init() {
   window.addEventListener('scroll', function (e) {
 
-    // Vertical scroll - window.pageYOffset for chrome, scrollTop for IE/FF
-    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    // Vertical scroll position - window.pageYOffset for chrome, scrollTop for IE/FF
+    var scrollDistance = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Vertical location where hero shrinks to navbar
-        shrinkOn = 100,
+    // Vertical location where hero shrinks to navbar
+    var shrinkPosition = 100;
 
-        // Select HTML header
-        nav = document.querySelector("nav");
-
-        // Add .navbar class when page scroll has passed shrinkOn
-        if (distanceY > shrinkOn) {
-          classie.add(nav, "small");
-        } else {
-          if (classie.has(nav, "small")) {
-            classie.remove(nav, "small");
-          }
-        }
+    // Add .navbar class when page scroll has passed shrinkOn
+    if (scrollDistance > shrinkPosition) {
+      $('.nav').addClass('small');
+      //classie.add(nav, "small");
+    } //else {
+      if (scrollDistance < shrinkPosition) {
+        // TODO - can I use 'this' here?
+        $('.nav').removeClass('.small');
+      }
+    //}
   });
 }
 window.onload = init();
