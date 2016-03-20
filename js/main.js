@@ -1,22 +1,19 @@
-function init() {
-  window.addEventListener('scroll', function (e) {
+$(document).ready(function () {
+
+  $(window).on('scroll', function (event) {
 
     // Vertical scroll position - window.pageYOffset for chrome, scrollTop for IE/FF
     var scrollDistance = window.pageYOffset || document.documentElement.scrollTop;
 
-    // Vertical location where hero shrinks to navbar
-    var shrinkPosition = 100;
-
-    // Add .navbar class when page scroll has passed shrinkOn
-    if (scrollDistance > shrinkPosition) {
+    // Add 'small' css class after vertical scroll distance 100, otherwise remove it
+    if (scrollDistance > 100) {
       $('.nav').addClass('small');
-      //classie.add(nav, "small");
-    } //else {
-      if (scrollDistance < shrinkPosition) {
-        // TODO - can I use 'this' here?
-        $('.nav').removeClass('.small');
+    } else {
+      if ($('.nav').hasClass('small')) {
+        $('.nav').removeClass('small');
       }
-    //}
+      // Do nothing
+    }
+
   });
-}
-window.onload = init();
+});
